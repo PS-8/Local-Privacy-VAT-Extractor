@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-umsatzsteuer.py
+vat.py
 
 Improved VAT extraction (German/English synonyms and abbreviations).
 Uses PyMuPDF + EasyOCR and groups OCR tokens into visual lines,
 then finds VAT keywords and nearest currency/percent tokens.
 
 Run:
-    python umsatzsteuer.py
+    python vat.py
 """
 
 import sys
@@ -94,7 +94,7 @@ if READER is None:
 # Flask app (background)
 # ---------------------------
 app = Flask(__name__)
-RESULT_FILE = Path.cwd() / "umsatzsteuer_results.xlsx"
+RESULT_FILE = Path.cwd() / "vat_results.xlsx"
 last_status = {"status": "idle", "files": []}
 
 @app.route("/status")
@@ -409,7 +409,7 @@ def process_files_and_write_excel(file_paths):
 class App:
     def __init__(self, root):
         self.root = root
-        root.title("Umsatzsteuer Extractor (improved)")
+        root.title("VAT Extractor")
         root.geometry("820x520")
         self.frame = tk.Frame(root, padx=10, pady=10)
         self.frame.pack(fill="both", expand=True)
