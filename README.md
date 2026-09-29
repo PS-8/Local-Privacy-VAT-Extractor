@@ -1,4 +1,4 @@
-# VAT Extractor
+# Local Privacy VAT Extractor
 
 A Python desktop application for extracting VAT and tax information from PDF documents and images using OCR.
 
