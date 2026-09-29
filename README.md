@@ -4,6 +4,16 @@ A Python desktop application for extracting VAT and tax information from PDF doc
 
 The application detects VAT-related keywords in German and English, identifies nearby tax amounts and percentages, and exports the extracted data to an Excel spreadsheet.
 
+## Demo
+
+### First Screenshot
+
+![First screenshot](first.jpg)
+
+### Second Screenshot
+
+![Second screenshot](second.jpg)
+
 ## Features
 
 - Extracts VAT information from:
@@ -30,16 +40,6 @@ The application detects VAT-related keywords in German and English, identifies n
 - Exports results to `vat_results.xlsx`
 - Automatically opens the generated Excel file when processing is complete
 - Includes a local Flask status and download endpoint
-
-## Demo
-
-### First Screenshot
-
-![First screenshot](first.jpg)
-
-### Second Screenshot
-
-![Second screenshot](second.jpg)
 
 
 ## Supported VAT Terms
